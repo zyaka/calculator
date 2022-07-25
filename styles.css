@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(167, 248, 248);
+}
+
+.display {
+    background-color: aliceblue;
+    height: 25px;
+    width: 50px;
+    margin-bottom: 25px;
+}
