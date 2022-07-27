@@ -4,9 +4,17 @@ body {
 
 .display {
     background-color: aliceblue;
-    height: 50px;
-    width: 200px;
+    height: 75px;
+    width: 470px;
     margin-bottom: 25px;
+}
+
+#input {
+    padding: 5px;
+}
+
+#output {
+    padding: 5px;
 }
 
 h1 {
