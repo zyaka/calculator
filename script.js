@@ -17,3 +17,35 @@ digits.forEach(digit => {
 
     })
 })
+
+//console log test
+
+// const readline = require('readline');
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+
+// rl.question('What is your name ? ', function(name) {
+//     rl.question('Where do you live ? ', function(country) {
+//         console.log(`${name}, is a citizen of ${country}`);
+//         rl.close();
+//     });
+// });
+
+// rl.on('close', function() {
+//     console.log('\nBYE BYE !!!');
+//     process.exit(0);
+// });
+
+// Gets user input
+var name = prompt("What is your name?");
+var num = prompt("What is your favorite number? ");
+
+// Uses user input to print out information
+document.write("Hello " + name + "!");
+document.write(num + "?! That's my favorite number too!");
+
+// Prints out the variable type
+document.write("Name is a " + typeof name);
+document.write("Num is a " + typeof num);
