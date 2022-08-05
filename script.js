@@ -43,9 +43,9 @@ var name = prompt("What is your name?");
 var num = prompt("What is your favorite number? ");
 
 // Uses user input to print out information
-document.write("Hello " + name + "!");
 document.write(num + "?! That's my favorite number too!");
+document.querySelector("h1").innerHTML = "Hii";
+document.querySelector("#output").innerHTML = "Hello " + name + "!";
 
-// Prints out the variable type
-document.write("Name is a " + typeof name);
-document.write("Num is a " + typeof num);
+// // Prints out the variable type.write("Name is a " + typeof name);
+// document.write("Num is a " + typeof num);
