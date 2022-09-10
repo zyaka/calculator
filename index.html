@@ -6,38 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <!-- <script src="./calcOperations.js"></script> -->
     <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 
 <body>
-    <h1>Calculator</h1>
-    <!-- <p>This calculator will add, subtract, multiple and divide</p> -->
-    <div class="calculator">
-        <div class="display">
-            <p id="input"></p>
-            <p id="output">output</p>
-        </div>
-        <div class="buttons">
-            <button class="digit" id="zero" onclick="">0</button>
-            <button class="digit" id="one" onclick="">1</button>
-            <button class="digit" id="two" onclick="">2</button>
-            <button class="digit" id="three" onclick="">3</button>
-            <button class="digit" id="four" onclick="">4</button>
-            <button class="digit" id="five" onclick="">5</button>
-            <button class="digit" id="six" onclick="">6</button>
-            <button class="digit" id="seven" onclick="">7</button>
-            <button class="digit" id="eight" onclick="">8</button>
-            <button class="digit" id="nine" onclick="">9</button>
-            <button class="operation" id="add" onclick="add()">+</button>
-            <button class="operation" id="subtract" onclick="add()">-</button>
-            <!-- <button class="operation" id="multiply" onclick="add()">*</button>
-            <button class="operation" id="divide" onclick="add()">/</button> -->
-            <button onclick="">Enter</button>
-        </div>
-
+    <h1>Calculator 2</h1>
+    <input type="text" id="num" name="num">
+    <div class="buttons">
+        <button onclick='prep("+")' id="add">+</button>
+        <button onclick='prep("-")' id="subtract">-</button>
+        <button onclick='prep("/")' id="divide">/</button>
+        <button onclick='prep("*")' id="multiply">*</button>
+        <button onclick="compute('=')" id="compute">=</button>
+        <button onclick="prep(0)" id="clear">CLEAR</button>
+        <button onclick="numClick('0')" class="digit">0</button>
+        <button onclick="numClick('1')" numclass="digit">1</button>
+        <button onclick="numClick('2')" numclass="digit">2</button>
+        <button onclick="numClick('3')" numclass="digit">3</button>
+        <button onclick="numClick('4')" numclass="digit">4</button>
+        <button onclick="numClick('5')" numclass="digit">5</button>
+        <button onclick="numClick('6')" numclass="digit">6</button>
+        <button onclick="numClick('7')" numclass="digit">7</button>
+        <button onclick="numClick('8')" numclass="digit">8</button>
+        <button onclick="numClick('9')" numclass="digit">9</button>
     </div>
+
 </body>
 
 </html>
