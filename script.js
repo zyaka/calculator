@@ -12,6 +12,7 @@ function prep(op_in) {
 
 }
 
+//checks if "=" button was clicked
 
 function compute(symbol) {
     if (symbol) {
